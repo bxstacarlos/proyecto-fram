@@ -6,6 +6,7 @@ body {
     color: #333;
 }
 
+/* Encabezados */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
@@ -25,8 +26,6 @@ img {
     background-color: #fff;
 }
 
-/* Estilos adicionales */
-
 /* Resetear CSS */
 * {
     margin: 0;
@@ -36,8 +35,9 @@ img {
 
 /* Estilos del encabezado */
 header {
-    background-color: #343a40;
+    background-color: #000;
     color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
@@ -122,7 +122,7 @@ section {
 }
 
 .interes-item {
-    background-color: #fff; /* Fondo blanco para los ítems */
+    background-color: #a1bfff; /* Fondo blanco para los ítems */
     padding: 0.75rem 1rem; /* Espaciado interno */
     margin-bottom: 0.5rem; /* Espaciado entre ítems */
     border-radius: 4px; /* Bordes redondeados */
@@ -133,11 +133,23 @@ section {
 
 .interes-item::before {
     content: "* "; /* Asterisco al inicio de cada ítem */
-    color: #007bff; /* Color azul del asterisco */
+    color: #055ab6; /* Color azul del asterisco */
     font-weight: bold; /* Asterisco en negrita */
 }
 
 .interes-item:hover {
     background-color: #e9ecef; /* Fondo gris claro al pasar el mouse */
     transform: scale(1.02); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Estilos específicos para el título h5 en el carrusel */
+.carousel-caption h5 {
+    color: #000000; /* Color del texto del título */
+    background-color: #f3d8d8; /* Fondo blanco para el título */
+    font-size: 1.5rem; /* Tamaño de fuente del título */
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 0.5rem; /* Espaciado debajo del título */
+    padding: 0.5rem 1rem; /* Espaciado interno para el título */
+    border-radius: 12px; /* Bordes redondeados para el fondo del título */
+    display: inline-block; /* Asegura que el fondo se ajuste al contenido */
 }
